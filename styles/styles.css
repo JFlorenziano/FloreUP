@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position:static;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-logo {
+    background-image: url('components/img/Florenziano.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+.h1-service{
+    font-size: 56px;
+    display: inline;
+    line-height: 1.2;
+    font-family: poppinsmedium;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.h2-service{
+    font-size: 56px;
+    display: inline;
+    line-height: 1.2;
+    font-family: poppinsmedium;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 200;
+    display: inline-block;
+}
+
+h1 span {
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+
+h1 span:hover {
+    color: rgb(132, 14, 201);
+}
+
+h2 {
+    font-size: 56px;
+    display: inline;
+    line-height: 1.2;
+    font-family: poppinsmedium;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: rgb(132, 14, 201);
+}
+
+p {
+    line-height: 1.6; 
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img {
+    width: 580px;
+    margin-top: -75px;
+}
+input {
+    
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.card-one, .card-two, .card-three {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(72, 70, 70);
+    text-align: center;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    position: relative;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    border-color: white;
+    overflow: hidden; /* Garante que a .div-card não saia do card */
+}
+
+.card-one:hover, 
+.card-two:hover, 
+.card-three:hover  {
+    width: 350px;
+    height: 450px;
+}
+
+.div-card {
+    position: absolute;
+    top: 0; /* Posiciona a div-card na parte inferior do cartão */
+    right: 0;
+    height: 50px;
+    background-color: rgb(230, 29, 29);
+    width: 30%;
+    border-bottom-left-radius: 20%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-one:hover, 
+.card-two:hover, 
+.card-three:hover  {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+    transition: all 0.4s ease-in-out;
+}
+
+
+.h3-card {
+    text-align: center;
+    margin-top: 30%;
+    size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 0.80em;
+    font-weight: bold;
+}
+.valor-h4{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20%;
+}
+.valor-h5{
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: -30px;
+}
+
+#title-services {
+    font-weight: 200;
+    text-decoration: none;
+}
+
+#container-card {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button-inicio {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+    margin-left: 20%;
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Garante que o texto no botão esteja centralizado */
+    text-decoration: none; /* Remove sublinhado padrão do link */
+    border-radius: 25px; /* Bordas arredondadas */
+}
+
+.button-inicio input[type="button"] {
+    border: none; /* Remove bordas padrão do botão */
+    height: 100%; /* Faz o botão ocupar toda a altura do link */
+    width: 100%; /* Faz o botão ocupar toda a largura do link */
+    background: none; /* Remove o fundo do botão */
+    color: inherit; /* Herda a cor do link pai */
+    font: inherit; /* Herda a fonte do link pai */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    border-radius: inherit; /* Herda bordas arredondadas do link pai */
+}
+
+
+
+
+.button-dinner {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(55, 184, 55);
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+    margin-left: 50%;
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Garante que o texto no botão esteja centralizado */
+    text-decoration: none; /* Remove sublinhado padrão do link */
+    border-radius: 25px; /* Bordas arredondadas */
+    position: absolute;
+    bottom: 10px; /* Posiciona a div-card na parte inferior do cartão */
+    right: 25%;
+    margin-bottom: 10px;
+    
+}
+
+.button-dinner input[type="button"] {
+    border: none; /* Remove bordas padrão do botão */
+    height: 100%; /* Faz o botão ocupar toda a altura do link */
+    width: 100%; /* Faz o botão ocupar toda a largura do link */
+    background: none; /* Remove o fundo do botão */
+    color: inherit; /* Herda a cor do link pai */
+    font: inherit; /* Herda a fonte do link pai */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    border-radius: inherit; /* Herda bordas arredondadas do link pai */
+}
+
+.button-inicio:hover {
+    background-color: rgb(55, 184, 55); /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+.button-dinner:hover{
+    background-color: rgb(105, 194, 105); /* Cor de fundo ao passar o mouse */
+    color: white;
+}

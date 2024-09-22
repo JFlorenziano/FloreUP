@@ -1,0 +1,100 @@
+/* Mídia query para telas menores */
+@media screen and (max-width: 760px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    li{
+            margin: 10px;
+            font-size: 10px;
+            padding: 0;
+            list-style-type: none;
+        
+        
+    }
+    
+    input {
+        align-self: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    ul {
+        text-align: center;
+    }
+    .h3-card{
+        font-size: 15px;
+        position: relative;
+        top: -20px;
+        left: 10px;
+        
+    }
+    .card-one, .card-two, .card-three {
+        width: 200px; /* Novo tamanho menor */
+        height: 300px; /* Novo tamanho menor */
+        background-color: rgb(72, 70, 70);
+        text-align: center;
+        border-top-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        position: relative;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        border-color: white;
+        margin-bottom: 30px;
+    }
+    
+    .card-one:hover, 
+    .card-two:hover, 
+    .card-three:hover {
+        width: 220px; /* Tamanho um pouco maior ao passar o mouse */
+        height: 320px; /* Tamanho um pouco maior ao passar o mouse */
+    }
+    
+    #container-card {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column; /* Muda a direção para vertical */
+        align-items: center; /* Centraliza os cards horizontalmente */
+    }
+    
+    .div-card {
+        position: absolute;
+        bottom: 0; /* Ajusta para a parte inferior do cartão */
+        right: 0;
+        height: 15px;
+        background-color: rgb(230, 29, 29);
+        width: 100%; /* Ajusta a largura para ocupar toda a largura do card */
+        border-bottom-left-radius: 20%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .card-one:hover .div-card, 
+    .card-two:hover .div-card, 
+    .card-three:hover .div-card {
+        width: 100%; /* Mantém a largura ajustada ao passar o mouse */
+        border-bottom-left-radius: 16%;
+        font-size: 1.5em;
+    }
+}
